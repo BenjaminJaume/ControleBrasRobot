@@ -1,0 +1,310 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:screenOrientation="portrait"
+    tools:context="com.projet.tutore.TourelleAndroid.MainActivity" >
+
+    <TextView
+        android:id="@+id/nom_application"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Menu"
+        android:textColor="@color/darkred"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_3"
+        android:layout_below="@+id/textView_3"
+        android:layout_marginTop="9dp"
+        android:text="@string/texte_rotation_y"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/afficher_valeur_Y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_4"
+        android:layout_alignRight="@+id/afficher_valeur_X"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_4"
+        android:layout_below="@+id/textView_4"
+        android:layout_marginTop="12dp"
+        android:text="@string/texte_rotation_z"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/afficher_valeur_Z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_5"
+        android:layout_alignBottom="@+id/textView_5"
+        android:layout_alignRight="@+id/afficher_valeur_Y"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"
+        android:text="@string/texte_adresse_mac"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/adresse_mac_bras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:enabled="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:maxLength="17"
+        android:text="@string/adresse_mac_bras"
+        android:textAllCaps="true"
+        android:textColorHint="@android:color/black"
+        android:textStyle="bold" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_2"
+        android:layout_alignBottom="@+id/textView_2"
+        android:layout_alignParentRight="true"
+        android:text="@string/texte_etat_connexion"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/etat_connexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView_6"
+        android:layout_below="@+id/textView_2"
+        android:text="@string/etat_connexion"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_2"
+        android:layout_below="@+id/bouton_deconnexion"
+        android:layout_marginTop="20dp"
+        android:text="@string/texte_rotation_x"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/afficher_valeur_X"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_4"
+        android:layout_alignRight="@+id/textView_6"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_X"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView_3"
+        android:layout_toLeftOf="@+id/textViewTmp_2"
+        android:layout_toRightOf="@+id/textViewTmp"
+        android:progressBackgroundTint="@color/black"
+        android:progressTint="@color/darkgreen" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_Y"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/progressBar_X"
+        android:layout_alignTop="@+id/textView_4"
+        android:layout_toRightOf="@+id/textViewTmp"
+        android:progressBackgroundTint="@color/black"
+        android:progressTint="@color/yellow" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_Z"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView_5"
+        android:layout_alignRight="@+id/progressBar_Y"
+        android:layout_toRightOf="@+id/textViewTmp"
+        android:progressBackgroundTint="@color/black"
+        android:progressTint="@color/darkred" />
+
+    <TextView
+        android:id="@+id/textViewTmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_5"
+        android:layout_below="@+id/textView_5"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="LARGE TEXT"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textViewTmp_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/afficher_valeur_Z"
+        android:layout_below="@+id/afficher_valeur_Z"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="CCC"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seekBar_Z"
+        android:layout_below="@+id/textViewTmp"
+        android:text="@string/texte_etat_bluetooth"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/etat_bluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etat_connexion"
+        android:layout_alignBottom="@+id/etat_connexion"
+        android:layout_alignLeft="@+id/textView_2"
+        android:text="@string/etat_bluetooth"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/seekBar_Z"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_1"
+        android:layout_alignRight="@+id/etat_connexion" />
+
+    <TextView
+        android:id="@+id/mode_manuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar_Z"
+        android:layout_centerHorizontal="true"
+        android:text="Axe Z manuel"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bouton_aide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/adresse_mac_bras"
+        android:layout_alignParentRight="true"
+        android:background="@android:drawable/btn_default"
+        android:text="Aide"
+        android:textStyle="bold" />
+
+    <ToggleButton
+        android:id="@+id/gerer_bluetooth"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/bouton_aide"
+        android:background="@drawable/icone_bluetooth_off"
+        android:checked="false"
+        android:text="ToggleButton"
+        android:textOff=" "
+        android:textOn=" "
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bouton_connexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bouton_calibrage"
+        android:layout_alignRight="@+id/bouton_calibrage"
+        android:layout_below="@+id/nom_application"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/btn_default"
+        android:enabled="false"
+        android:text="@string/texte_connexion"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bouton_calibrage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bouton_demarrer_arreter"
+        android:layout_alignRight="@+id/bouton_demarrer_arreter"
+        android:layout_below="@+id/bouton_connexion"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/btn_default"
+        android:enabled="false"
+        android:text="@string/texte_calibrage"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bouton_demarrer_arreter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bouton_deconnexion"
+        android:layout_alignRight="@+id/bouton_deconnexion"
+        android:layout_below="@+id/bouton_calibrage"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/btn_default"
+        android:enabled="false"
+        android:text="@string/texte_demarrer_arreter"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bouton_deconnexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bouton_demarrer_arreter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@android:drawable/btn_default"
+        android:enabled="false"
+        android:text="@string/texte_deconnexion"
+        android:textStyle="bold"
+        android:width="275dp" />
+
+</RelativeLayout>

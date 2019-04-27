@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="projet.tutore.TourelleAndroid.Page_aide" >
+
+    <Button
+        android:id="@+id/bouton_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:layout_toLeftOf="@+id/bouton_suivant"
+        android:layout_toRightOf="@+id/bouton_precedent"
+        android:background="@android:drawable/btn_default"
+        android:text="Lancer la vidéo"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bouton_suivant"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bouton_video"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/bouton_video"
+        android:background="@drawable/fleche_droite_active" />
+
+    <Button
+        android:id="@+id/bouton_precedent"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bouton_video"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/bouton_video"
+        android:background="@drawable/fleche_gauche_inactive"
+        android:enabled="false" />
+
+    <TextView
+        android:id="@+id/afficher_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Page 1 / 3"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/red"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/afficher_aide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bouton_precedent"
+        android:layout_below="@+id/afficher_page"
+        android:layout_marginTop="11dp"
+        android:text="@string/texte_aide_1"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+</RelativeLayout>

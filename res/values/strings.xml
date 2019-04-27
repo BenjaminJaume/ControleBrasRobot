@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="nom_application">Contrôle du bras robotisé</string>
+    <string name="titre_page_principale">Page principale</string>
+    <string name="titre_page_aide">Page d\'aide</string>
+    <string name="action_settings">Settings</string>
+    <string name="texte_connexion">1) Connexion au bras</string>
+    <string name="adresse_mac_bras">00:0B:CE:08:4D:AB</string>
+    <string name="texte_adresse_mac">Adresse MAC du bras</string>
+    <string name="texte_etat_bluetooth">Etat du bluetooth</string>
+    <string name="texte_etat_connexion">Etat de la connexion</string>
+    <string name="etat_connexion">---</string>
+    <string name="etat_bluetooth">---</string>
+    <string name="texte_deconnexion">4) Déconnexion du bras</string>
+    <string name="texte_calibrage">2) Calibrer le bras</string>
+    <string name="texte_demarrer_arreter">3) Démarrer mouvements</string>
+    <string name="texte_rotation_x">Rotation en X :     </string>
+    <string name="texte_rotation_y">Rotation en Y :     </string>
+    <string name="texte_rotation_z">Rotation en Z :     </string>
+    <string name="texte_aide_1"><u>Procédure d\'utilisation :</u>\n\n
+        1) Activer la fonction <u>bluetooth</u> grâce au bouton situé en bas a gauche de l\'écran.\n 
+        (P.S. : Si c\'est la première fois après le lancement de l\'application que vous activez le bluetooth grâce à ce 
+        bouton, <u>il y aura un petit décalage entre l\'affichage et l\'activation du bluetooth</u>)\n\n
+        2) Saisir l\'<u>adresse MAC</u> du bras à contrôler (dans le champ de saisi situé en bas).\n\n
+        3) Se connecter au bras avec le bouton \"<u>Connexion</u>\". (vérifier avant que le bras soit alimenté)\n\n
+        4) Calibrer le périphérique avec le bras robotisé en cliquant sur le bouton \"<u>Calibrer</u>\".\n\n
+        5) Démarrer les mouvements du bras en cliquant sur le bouton \"<u>Démarrer mouvements</u>\".\n
+        (P.S : Si une barre de déplacement latéral située en bas  de l\'écran apparaît,
+        elle sert à deplacer le servomoteur sur l\'axe Z car l\'application est en mode \"manuel\")\n\n
+        6) Pour finir, déconnecter le périphérique du bras en cliquant sur \"<u>Deconnexion</u>\".\n
+        \n\n
+		Pour plus d\'informations, vous pouvez regarder la vidéo de présentation
+		sur l\'application en cliquant sur le bouton \"Lancer la vidéo\"
+        
+        </string>
+    <string name="texte_aide_2"><u>Erreurs possibles :</u>\n\n
+        \"<u>Impossible de se connecter</u>\" : vérifier que le bras soit bien alimenté, et en 10V continu\n\n
+       	\"<u>Connexion avortée par le bras robotisé</u>\" : il est impossible à l\'application d\'envoyer des informations au bras, 
+       	ce qui provoque la remise à zéro de l\'application\n\n
+       	\"<u>Impossible de remettre le bras robotisé dans position d\'origine</u>\" : lors de l\'appuis sur le bouton \"Déconnexion\", l\'application envoie
+       	l\'information de remise à zéro du bras. Si cette erreur apparaît, c\'est que l\'information n\'a pas pû arriver jusqu\'au bras.
+        </string>
+    <string name="texte_aide_3"><u>Auteurs de l\'application :</u>\n\n
+        - JAUME Benjamin : <u>benjamin.jaume@gmail.com</u>\n
+        - CABALOU Cédric\n
+        - LOUBERE Kévin\n
+        - BERTHOMMÉ Quentin\n\n
+        (élèves de la promotion 2016 de la licence professionnelle SARI à l\'IUT de Bordeaux 1)</string>
+
+</resources>
